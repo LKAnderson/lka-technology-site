@@ -1,0 +1,8 @@
+# Not published — prototype runtime, screenshots, resume PDFs
+_source/
+
+# OS
+.DS_Store
+
+# Local Claude Code settings (machine-specific)
+.claude/settings.local.json

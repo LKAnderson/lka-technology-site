@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LKA Technology — Kent Anderson, Independent Software Consultant</title>
+    <meta
+      name="description"
+      content="Kent Anderson is an independent software consultant in the Phoenix, Arizona area, building the systems that connect hardware to the cloud: embedded firmware, wearables, mobile apps, and backend APIs."
+    />
+    <meta property="og:title" content="LKA Technology — Kent Anderson, Independent Software Consultant" />
+    <meta
+      property="og:description"
+      content="Hardware to cloud, one engineer. Senior software help, on your schedule."
+    />
+    <meta property="og:type" content="website" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("lka-theme");
+          var dark = t ? t === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div style="background: var(--color-bg); min-height: 100vh">
+      <nav class="nav site-nav">
+        <span class="nav-brand">LKA Technology</span>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <button
+            type="button"
+            id="theme-toggle"
+            class="btn btn-ghost btn-icon icon-toggle"
+            aria-label="Switch to light mode"
+          >
+            <svg
+              class="icon-sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              ></path>
+            </svg>
+            <svg
+              class="icon-moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+        <button
+          type="button"
+          id="nav-toggle"
+          class="btn btn-ghost btn-icon nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <svg
+            class="icon-menu"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+          <svg
+            class="icon-close"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+
+      <div class="wrap">
+        <section style="padding: 96px 0 72px 0">
+          <h1
+            style="
+              font-family: var(--font-heading);
+              font-weight: var(--font-heading-weight);
+              font-size: clamp(40px, 6vw, 80px);
+              line-height: clamp(42px, 6.2vw, 84px);
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              margin: 0 0 0 -0.05em;
+            "
+          >
+            <span style="display: block">Hardware to cloud, one engineer.</span>
+            <span style="display: block">Senior software help, on your schedule.</span>
+          </h1>
+          <p class="muted-82" style="font-size: 17px; line-height: 26px; max-width: 60ch; margin: 20px 0 0 0">
+            I'm Kent Anderson, an independent software consultant based in the Phoenix, Arizona area. I build the
+            systems that connect hardware to the cloud &mdash; embedded firmware, wearables, mobile apps, and the
+            backend APIs that tie them together. I'm currently engaged with Huml Health as a contract engineer, and
+            taking on additional part-time work: short-term projects or ongoing engagements.
+          </p>
+          <span
+            style="
+              display: block;
+              margin-top: 16px;
+              font-family: var(--font-heading);
+              font-weight: var(--font-heading-weight);
+              font-size: 17px;
+              letter-spacing: 0.01em;
+              color: var(--color-accent-700);
+            "
+            >Accepting part-time engagements &mdash; short-term or ongoing</span
+          >
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; align-items: center">
+            <a href="mailto:kent@lkatechnology.com" class="btn btn-primary" style="white-space: nowrap; flex-shrink: 0"
+              >Email kent@lkatechnology.com</a
+            >
+            <a
+              href="https://www.linkedin.com/in/lkanderson/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              style="white-space: nowrap; flex-shrink: 0"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/LKAnderson"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              style="white-space: nowrap; flex-shrink: 0"
+              >GitHub</a
+            >
+          </div>
+          <p class="muted-70" style="font-size: 13px; line-height: 24px; margin: 20px 0 0 0; letter-spacing: 0.02em">
+            Greater Phoenix Area &middot; Remote and in-person teams
+          </p>
+        </section>
+
+        <section style="padding: 24px 0 60px 0">
+          <span class="section-kicker">01 &middot; Track record</span>
+          <hr class="section-rule" />
+          <div class="blueprint" style="overflow: visible">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <header
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                align-items: stretch;
+                border-bottom: 1px solid var(--color-divider);
+              "
+            >
+              <span
+                style="
+                  flex: 1;
+                  min-width: 16ch;
+                  padding: 12px 24px;
+                  font-size: 13px;
+                  line-height: 24px;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                "
+                >Kent Anderson &mdash; Engineering Record</span
+              >
+              <span
+                class="muted-70"
+                style="
+                  border-left: 1px solid var(--color-divider);
+                  white-space: nowrap;
+                  padding: 12px 24px;
+                  font-size: 13px;
+                  line-height: 24px;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                "
+                >30 YRS</span
+              >
+              <span
+                class="muted-70"
+                style="
+                  border-left: 1px solid var(--color-divider);
+                  white-space: nowrap;
+                  padding: 12px 24px;
+                  font-size: 13px;
+                  line-height: 24px;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                "
+                >PHX, AZ</span
+              >
+              <span
+                class="muted-70"
+                style="
+                  border-left: 1px solid var(--color-divider);
+                  white-space: nowrap;
+                  padding: 12px 24px;
+                  font-size: 13px;
+                  line-height: 24px;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                "
+                >REMOTE + ON-SITE</span
+              >
+            </header>
+            <table class="table" style="table-layout: fixed">
+              <colgroup>
+                <col style="width: 64px" />
+                <col style="width: 32%" />
+                <col style="width: 18%" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Property</th>
+                  <th>Value</th>
+                  <th>Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-size: 13px; font-weight: 600; color: var(--color-accent-700)">01</td>
+                  <td>Experience</td>
+                  <td
+                    style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px"
+                  >
+                    3 decades
+                  </td>
+                  <td class="muted-78">Full-stack, embedded, mobile, wearable, cloud</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 13px; font-weight: 600; color: var(--color-accent-700)">02</td>
+                  <td>Industries</td>
+                  <td
+                    style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px"
+                  >
+                    7+
+                  </td>
+                  <td class="muted-78">
+                    Behavioral health, insurance, aerospace, retail, telecom, accounting, higher education, and more
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: 13px; font-weight: 600; color: var(--color-accent-700)">03</td>
+                  <td>Current engagement</td>
+                  <td
+                    style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px"
+                  >
+                    Huml Health
+                  </td>
+                  <td class="muted-78">Continuing prior platform work</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 13px; font-weight: 600; color: var(--color-accent-700)">04</td>
+                  <td>Engineers led directly</td>
+                  <td
+                    style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px"
+                  >
+                    100+
+                  </td>
+                  <td class="muted-78">Project lead &amp; tech lead roles at multiple companies</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              class="muted-70"
+              style="
+                margin: 0;
+                padding: 12px 24px;
+                border-top: 1px solid var(--color-divider);
+                font-size: 13px;
+                line-height: 24px;
+              "
+            >
+              Full history in the timeline below.
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="about"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px clamp(24px, 5vw, 80px);
+            align-items: center;
+            padding: 24px 0 72px 0;
+          "
+        >
+          <div style="flex: 1 1 380px">
+            <span class="section-kicker">02 &middot; About</span>
+            <hr class="section-rule" />
+            <h2
+              style="
+                font-family: var(--font-heading);
+                font-weight: var(--font-heading-weight);
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                margin: 0 0 20px 0;
+              "
+            >
+              Bridging hardware and cloud
+            </h2>
+            <p class="muted-82" style="font-size: 15px; line-height: 24px; margin: 0 0 16px 0; max-width: 56ch">
+              I love building software that bridges the physical and digital worlds &mdash; from hardware integration
+              and embedded firmware to mobile companion apps and the backend APIs that tie it all together. I've been
+              writing software for 30 years across a wide range of domains, and I now run my own consultancy, LKA
+              Technology, providing senior engineering services to teams that need experienced help without a full-time
+              hire.
+            </p>
+            <p class="muted-82" style="font-size: 15px; line-height: 24px; margin: 0 0 16px 0; max-width: 56ch">
+              Earlier in my career I spent eight years at Performance Software developing embedded avionics display
+              software to DO-178 and DO-330 airworthiness standards &mdash; work that instilled the discipline
+              safety-critical development demands.
+            </p>
+            <p class="muted-82" style="font-size: 15px; line-height: 24px; margin: 0; max-width: 56ch">
+              What makes my background unusual is the breadth: equally comfortable close to the hardware, building a
+              companion app in Swift or Kotlin, or designing the backend API that ties it together. For companies
+              building connected hardware with companion applications, that combination is hard to find in one person.
+            </p>
+          </div>
+          <figure class="blueprint" style="flex: 1 1 300px; margin: 0; aspect-ratio: 4/5; overflow: visible">
+            <img
+              src="assets/headshot.jpg"
+              alt="Kent Anderson"
+              style="width: 100%; height: 100%; object-fit: cover; display: block"
+            />
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          </figure>
+        </section>
+
+        <section id="services" style="padding: 24px 0 72px 0">
+          <span class="section-kicker">03 &middot; Services</span>
+          <hr class="section-rule" />
+          <h2
+            style="
+              font-family: var(--font-heading);
+              font-weight: var(--font-heading-weight);
+              font-size: 32px;
+              line-height: 36px;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+              margin: 0 0 24px 0;
+            "
+          >
+            How I can help you
+          </h2>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+              gap: clamp(20px, 3vw, 40px);
+            "
+          >
+            <div class="blueprint" style="padding: 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <h3
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: var(--font-heading-weight);
+                  font-size: 20px;
+                  line-height: 24px;
+                  letter-spacing: 0.02em;
+                  text-transform: uppercase;
+                  margin: 0 0 12px 0;
+                "
+              >
+                Custom software development
+              </h3>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 0">
+                Concept through production release, across embedded, mobile, backend, and enterprise systems.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <h3
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: var(--font-heading-weight);
+                  font-size: 20px;
+                  line-height: 24px;
+                  letter-spacing: 0.02em;
+                  text-transform: uppercase;
+                  margin: 0 0 12px 0;
+                "
+              >
+                Connected device integration
+              </h3>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 0">
+                BLE, wearables, and the companion mobile apps that talk to them.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <h3
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: var(--font-heading-weight);
+                  font-size: 20px;
+                  line-height: 24px;
+                  letter-spacing: 0.02em;
+                  text-transform: uppercase;
+                  margin: 0 0 12px 0;
+                "
+              >
+                Technical leadership
+              </h3>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 0">
+                Agile delivery practices, mentoring, and hands-on guidance for growing teams.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <h3
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: var(--font-heading-weight);
+                  font-size: 20px;
+                  line-height: 24px;
+                  letter-spacing: 0.02em;
+                  text-transform: uppercase;
+                  margin: 0 0 12px 0;
+                "
+              >
+                Application remediation
+              </h3>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 0">
+                Diagnosing and stabilizing existing systems: bug elimination, performance work, modernization.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <h3
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: var(--font-heading-weight);
+                  font-size: 20px;
+                  line-height: 24px;
+                  letter-spacing: 0.02em;
+                  text-transform: uppercase;
+                  margin: 0 0 12px 0;
+                "
+              >
+                Architecture &amp; code review
+              </h3>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 0">
+                Independent assessment of system design, plus constructive review that raises code quality.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <h3
+                style="
+                  font-family: var(--font-heading);
+                  font-weight: var(--font-heading-weight);
+                  font-size: 20px;
+                  line-height: 24px;
+                  letter-spacing: 0.02em;
+                  text-transform: uppercase;
+                  margin: 0 0 12px 0;
+                "
+              >
+                Software testing
+              </h3>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 0">
+                Test strategy and automated test development, informed by safety-critical, formally qualified test
+                systems.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style="padding: 24px 0 72px 0">
+          <span class="section-kicker">04 &middot; Current engagement</span>
+          <hr class="section-rule" />
+          <div class="blueprint" style="padding: 32px; overflow: visible">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <h2
+              style="
+                font-family: var(--font-heading);
+                font-weight: var(--font-heading-weight);
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                margin: 0 0 16px 0;
+              "
+            >
+              Still building with the team I led
+            </h2>
+            <p class="muted-82" style="font-size: 15px; line-height: 24px; margin: 0 0 16px 0; max-width: 70ch">
+              My current client engagement is with Huml Health, where I previously served as Principal Software Engineer
+              and Engineering Lead &mdash; work spanning smart wearable integration with Wear OS, native and React
+              Native mobile development for iOS and Android, and backend REST API development in a medical IoT context
+              focused on addiction recovery and behavioral health.
+            </p>
+            <p class="muted-82" style="font-size: 15px; line-height: 24px; margin: 0; max-width: 70ch">
+              I returned in June 2026 as a Senior Software Engineering Consultant, continuing that platform development
+              on a contract basis &mdash; while opening capacity for additional part-time client work: short-term
+              projects or ongoing engagements, for teams building connected hardware, wearables, or mobile and backend
+              systems.
+            </p>
+          </div>
+        </section>
+
+        <section id="experience" style="padding: 24px 0 72px 0">
+          <span class="section-kicker">05 &middot; Experience</span>
+          <hr class="section-rule" />
+          <h2
+            style="
+              font-family: var(--font-heading);
+              font-weight: var(--font-heading-weight);
+              font-size: 32px;
+              line-height: 36px;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+              margin: 0 0 24px 0;
+            "
+          >
+            Timeline
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 16px">
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Senior Software Engineering Consultant &middot; Huml Health
+                  <span class="muted-60" style="font-weight: 400">(Contract)</span>
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Jun 2026 &ndash; Present</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Continuing platform development as a contract engineer, following my prior role as Principal Software
+                Engineer and Engineering Lead.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Principal Consultant / Owner &middot; LKA Technology
+                  <span class="muted-60" style="font-weight: 400">(Self-employed)</span>
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Jun 2026 &ndash; Present</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Independent software engineering consultancy providing senior-level services to teams that need
+                experienced help without a full-time hire.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Principal Software Engineer | Engineering Lead &middot; Huml Health
+                  <span class="muted-60" style="font-weight: 400">(Full-time)</span>
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Jun 2024 &ndash; Apr 2026</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Full-stack engineer for a behavioral-health wearable platform: BLE and SDK hardware integration, Wear OS
+                apps, React Native mobile, and TypeScript backend services on Postgres and MongoDB. Led a development
+                team of three.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Lead Software Engineer &middot; USAA
+                  <span class="muted-60" style="font-weight: 400">(Full-time)</span>
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Oct 2018 &ndash; Jun 2024</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Lead designer of a REST API framework standardizing practices across 30+ engineers; led iOS/Android
+                feature development and a connected-home IoT initiative in the Property &amp; Casualty division.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Online Adjunct Instructor &middot; Brigham Young University&ndash;Idaho
+                  <span class="muted-60" style="font-weight: 400">(Part-time)</span>
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Dec 2016 &ndash; Apr 2020</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Taught Introduction to Object-Oriented Programming (Java); progressed to Instructor Development Leader,
+                coaching a remote teaching team.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Senior Principal Engineer &middot; Performance Software
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Jul 2010 &ndash; Sep 2018</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Senior engineer and project lead at a defense and aerospace software firm, leading mixed remote teams of
+                up to 15 across avionics, middleware, and industrial software. Architected a ground-up replacement of a
+                20-year-old flight navigation database system for Rockwell Collins &mdash; 50% faster processing, tested
+                to DO-330 Tool Qualification Level 4/5 with 16,000+ automated tests. Also built a RESTful API and SDK
+                for GE Energy's System 1 industrial monitoring platform. Awards: MVP (2010), Project Lead of the Year
+                (2011), Leadership Excellence (2016).
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Mobile Games &ndash; Personal Side Projects &middot; Kent Anderson Software
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Aug 2012 &ndash; Dec 2015</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Independently designed, developed, and shipped two iOS games &mdash; TreeDudes Launch and Toggalight
+                &mdash; with real-time physics simulation, from concept through App Store release. Source on GitHub.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Senior Programmer/Analyst &middot; O'Reilly Auto
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Jan 2009 &ndash; Jul 2010</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Co-architected a browser-based online ordering system for professional auto parts installers, plus
+                internal retail operations applications.
+              </p>
+            </div>
+            <!--<div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Financial Advisor &middot; Edward Jones
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Nov 2003 &ndash; Nov 2008</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Understanding the financial industry from a sales perspective. Not afraid to try new things.
+              </p>
+            </div>-->
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Software Engineer &middot; AG Communication Systems, Inc. (Lucent)
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Jul 1997 &ndash; Nov 2003</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Telecommunications and network management software with a focus on hardware control and device
+                communication protocols &mdash; SNMP-based switch provisioning, TL-1 interfaces, and a
+                video-conferencing scheduling system for a remote-learning network.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Freelance Software Developer &middot; Whitewater Pools
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >Mar 2003 &ndash; Jun 2003</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Built a business and project-management application (MS Access, MFC, C++) for a Phoenix-area pool
+                company.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Software Engineer &middot; Hypercom
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >May 2000 &ndash; Nov 2000</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Built a payment transaction routing system translating and routing data between physical payment
+                terminals and payment networks.
+              </p>
+            </div>
+            <div class="blueprint" style="padding: 20px 24px; overflow: visible">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline"
+              >
+                <h3
+                  style="
+                    font-family: var(--font-heading);
+                    font-weight: var(--font-heading-weight);
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin: 0;
+                  "
+                >
+                  Programmer/Analyst &middot; Brigham Young University
+                </h3>
+                <span class="muted-65" style="font-size: 13px; letter-spacing: 0.04em; white-space: nowrap"
+                  >May 1994 &ndash; Jul 1997</span
+                >
+              </div>
+              <p class="muted-78" style="font-size: 14px; line-height: 22px; margin: 8px 0 0 0">
+                Developed enterprise financial applications for payroll, accounting, and student billing, including an
+                early document scanning and retrieval system for Accounts Payable.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style="padding: 24px 0 72px 0">
+          <span class="section-kicker">06 &middot; Specialties</span>
+          <hr class="section-rule" />
+          <h2
+            style="
+              font-family: var(--font-heading);
+              font-weight: var(--font-heading-weight);
+              font-size: 32px;
+              line-height: 36px;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+              margin: 0 0 20px 0;
+            "
+          >
+            Tools &amp; domains
+          </h2>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span class="tag tag-accent">IoT</span>
+            <span class="tag tag-accent">Wearables (Wear OS)</span>
+            <span class="tag tag-accent">Bluetooth Low Energy (BLE)</span>
+            <span class="tag tag-accent">Embedded firmware (ESP32/Arduino)</span>
+            <span class="tag tag-accent">Avionics software (DO-178)</span>
+            <span class="tag tag-accent">iOS (Swift)</span>
+            <span class="tag tag-accent">Android (Kotlin)</span>
+            <span class="tag tag-accent">REST APIs</span>
+            <span class="tag tag-accent">C/C++</span>
+            <span class="tag tag-accent">TypeScript</span>
+            <span class="tag tag-accent">Technical leadership &amp; mentoring</span>
+          </div>
+        </section>
+
+        <section id="contact" style="padding: 24px 0 80px 0">
+          <span class="section-kicker">07 &middot; Get in touch</span>
+          <hr class="section-rule" />
+          <h2
+            style="
+              font-family: var(--font-heading);
+              font-weight: var(--font-heading-weight);
+              font-size: 28px;
+              line-height: 32px;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+              margin: 0 0 12px 0;
+            "
+          >
+            Let's talk about your project.
+          </h2>
+          <p class="muted-82" style="font-size: 15px; line-height: 24px; margin: 0 0 20px 0; max-width: 60ch">
+            Open to short-term projects and ongoing part-time engagements &mdash; connected hardware, wearables, mobile
+            apps, or the backend that ties them together.
+          </p>
+          <a
+            href="mailto:kent@lkatechnology.com"
+            style="
+              font-family: var(--font-heading);
+              font-weight: var(--font-heading-weight);
+              font-size: 22px;
+              letter-spacing: 0.01em;
+              color: var(--color-accent);
+              text-decoration: underline;
+              text-underline-offset: 4px;
+            "
+            >kent@lkatechnology.com</a
+          >
+          <div style="display: flex; gap: 20px; margin-top: 16px">
+            <a
+              href="https://www.linkedin.com/in/lkanderson/"
+              target="_blank"
+              rel="noopener"
+              style="font-size: 14px; color: var(--color-accent)"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/LKAnderson"
+              target="_blank"
+              rel="noopener"
+              style="font-size: 14px; color: var(--color-accent)"
+              >GitHub</a
+            >
+          </div>
+        </section>
+      </div>
+
+      <footer
+        style="
+          padding-inline: clamp(20px, 5vw, 72px);
+          padding-block: 32px;
+          border-top: 1px solid var(--color-divider);
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px 24px;
+          justify-content: space-between;
+          font-size: 13px;
+        "
+        class="muted-65"
+      >
+        <span>LKA Technology &middot; Kent Anderson &middot; Greater Phoenix Area, Arizona</span>
+        <span>&copy; 2026 LKA Technology, LLC</span>
+      </footer>
+    </div>
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
